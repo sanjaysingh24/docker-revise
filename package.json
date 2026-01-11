@@ -1,0 +1,26 @@
+{
+  "name": "docker-optimize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjaysingh24/docker-revise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/sanjaysingh24/docker-revise/issues"
+  },
+  "homepage": "https://github.com/sanjaysingh24/docker-revise#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.1.2"
+  }
+}
