@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  backend: 
+    build: .
+    container_name: mern_backend
+
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    container_name: mern_mongo
+    volumes:
+      - mongo-data:/data/db
+    ports:  
+      - "27017:27017"
+volumes:
+  mongo-data:
